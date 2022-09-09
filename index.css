@@ -1,0 +1,268 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    user-select: none;
+}
+main{
+    width:65%;
+    height: 80%;
+    /* border: 1px solid red; */
+    background-color: white;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.377);
+    overflow: hidden;
+}
+main>div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16%;
+    background-color: brown;
+}
+.saco{
+    position: absolute;
+    top: 23%;
+    left: 0;
+    width: 100%;
+    height: 15%;
+}
+.saco>section:nth-of-type(1){
+    width: 100%;
+    height: 40%;
+    background-color: green;
+}
+.saco>section:nth-of-type(2){
+    width: 100%;
+    height: 60%;
+    background-color: rgb(187, 151, 53);
+}
+main>span{
+    position: absolute;
+    top:7%;
+    width: 9.5%;
+    height: 17%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/favpng_hamster-drawing-child.png);
+    animation:hamestermove 5s alternate infinite linear;
+}
+.time{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 8%;
+   background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.time>div{
+    width: 50%;
+    height:100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.733);
+}
+.time>div>span{
+    width: 50%;
+    height: inherit;
+    /* border: 1px solid red; */
+}
+.time>div>span:nth-of-type(1){
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   font-size: 20px;
+}
+.time>div>span:nth-of-type(2){
+    background-image: url(img/favpng_gold-money-bag-coin-clip-art.png);
+    background-position: center;
+    background-size: cover; 
+    border-radius: 50%; 
+}
+.coinIncrease{
+    animation: coinsbox 1s alternate-reverse  ; 
+}
+.time>span{
+    width: 50%;
+    height: 100%;
+    /* border: 1px 1px 5px gray; */
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.audiogame{
+    position: absolute;
+    width: auto;
+    height: auto;
+    right:5%;
+    top: 2%;
+    cursor: pointer;
+}
+.audiogame>span{
+    position: absolute;
+   font-size: 25px;
+}
+.audiogame>span:nth-last-of-type(1){
+    display: none;
+}
+#hamester>span{
+    background-position: center;
+    background-size: contain;
+    z-index: 4;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    cursor: pointer;
+}
+#hamester{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coin{
+    position: fixed;
+    /* top: 94%; */
+    /* top: 25%; */
+    /* left: 18.54%; */
+    width:50px;
+    height: 50px;
+    background-image: url(img/pngwing.com.png);
+    animation:coinmove 3s linear forwards ;
+}
+.bomb{
+    position: fixed;
+    /* top: 94%; */
+    /* top: 19%; */
+    /* left: 18.54%; */
+    width:50px;
+    height: 50px;
+    background-position: left !important;
+    border-radius: 40% !important;
+    background-image: url(img/pnghut_vector-graphics-explosion-clip-art-bomb-image-cartoon.png);
+    animation:coinmove 3s linear forwards ;
+}
+.continue{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.751);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+.continueicon{
+    color: rgb(0, 204, 0);
+    font-size: 150px;
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    cursor: pointer;
+    animation: continueicon 1s forwards alternate infinite;
+}
+.spancontinue{
+    position: absolute;
+    font-size: 30px;
+    top: 45%;
+    left: 50%;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.hamesterimg{
+    position: absolute;
+    top:30%;
+    left: 22%;
+    width: 200px;
+    height: 200px;
+    background-image:url(img/favpng_hamster-drawing-child.png);
+    background-position: center;
+    background-size: contain;
+    animation: hamesterimg 2s forwards alternate infinite linear;
+}
+.refresh{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.751);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+.refreshicon{
+    color: rgb(10, 203, 10);
+    font-size: 130px;
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    cursor: pointer;
+    animation: refresh 2s forwards  infinite;
+}
+.spanrefresh{
+    position: absolute;
+    font-size: 30px;
+    top: 45%;
+    left: 50%;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.hamesterimg{
+    position: absolute;
+    top:30%;
+    left: 22%;
+    width: 200px;
+    height: 200px;
+    background-image:url(img/favpng_hamster-drawing-child.png);
+    background-position: center;
+    background-size: contain;
+    animation: hamesterimg 2s forwards alternate infinite linear;
+}
+@keyframes hamestermove{
+     from{
+         left: 0;
+     }
+     to{
+         left: 91%;
+     }
+
+}
+@keyframes coinmove{
+    to{
+        top: 74%;
+
+    }
+}
+@keyframes continueicon{
+    to{left: 70%;}
+}
+@keyframes hamesterimg{
+    0%{top:30%;}
+    50%{top: 15%;}
+    100%{top: 45%;}
+}
+@keyframes refresh{
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes coinsbox{
+    to{
+        transform: scale(1.2);
+    }
+}
